@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_calculadora.css">
+    <title>Índice de Massa Corporal</title>
+</head>
+<body>
+    <div class="img_back">
+        <header>
+            <nav>
+                <a href="../index.html">Home</a>
+                <a href="../pags/sobre.html">Sobre</a>
+                <a href="../pags/comer_bem.html">Impotância</a>
+                <a href="../pags/calculadora.html">Calculadora</a>
+            </nav>
+        </header>
+    </div>
+    
+    <section id="content">
+        <div id="calculator">
+            <label for="age">Selecione a faixa etária:</label>
+            <select id="age">
+                <option value="adult">Adulto</option>
+                <option value="senior">Idoso</option>
+            </select>
+
+            <label for="weight">Peso (kg):</label>
+            <input type="number" id="weight" placeholder="Digite seu peso" required>
+
+            <label for="height">Altura (m):</label>
+            <input type="number" id="height" placeholder="Digite sua altura" required>
+
+            <button onclick="calculateIMC()">Calcular IMC</button>
+
+            <div id="result">
+                <p>Seu IMC é: <span id="imcValue"></span></p>
+                <p>Classificação: <span id="classification"></span></p>
+                <img id="resultImage" src="../img/imc.jpg" alt="Resultado do IMC">
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
